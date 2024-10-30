@@ -73,6 +73,8 @@ button {
 
 }
 
+/* HEDER */
+
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -207,10 +209,167 @@ button {
 
   }
 
+  .header-menu-link.carret {
+    position: relative;
+
+  }
+
   .header-contact {
     display: flex;
     flex-direction: column;
     gap: 12px;
 
+  }
+}
+
+@media screen and (min-width:1158px) {
+
+  .header-logo {
+
+    margin-right: 76px;
+
+  }
+
+  .header-menu-address-link {
+    padding: 24px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+  }
+
+  .header-contact {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+  }
+
+}
+
+/* MAIN */
+
+
+
+.main-features {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.main-features-subtitle {
+  display: flex;
+  gap: 72px;
+  flex-wrap: wrap;
+
+}
+
+.main-features-icon {
+  display: none;
+}
+
+.main-features-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
+
+}
+
+.main-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+@media screen and (min-width:768px) {
+
+
+
+  .main-features-list {
+
+    flex-basis: calc((100% - 3 * 24px) / 2);
+  }
+
+  .main-features-item {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width:1158px) {
+
+  .main-features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .main-features-subtitle {
+    display: flex;
+    gap: 24px;
+    width: 1128px;
+  }
+
+  .main-features-list {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+
+  }
+
+  .main-features-item {
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    margin-top: 8px;
+
+  }
+
+  .conteiner-main-name {
+    margin-bottom: 8px;
+  }
+
+  .main-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+  }
+
+  .main-achieved {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .main-team-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+
+  .main-features-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    height: 112px;
+    margin-bottom: 8px;
   }
 }
