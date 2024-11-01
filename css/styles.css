@@ -645,7 +645,7 @@ button {
 
 .main-achieved {
   padding-bottom: 96px;
-  margin-top: 96px;
+
 }
 
 .main-portfolio {
@@ -703,6 +703,11 @@ button {
 
 @media screen and (min-width:768px) {
 
+  .main-achieved {
+
+    padding-bottom: 120px;
+  }
+
   .main-portfolio-picture {
     display: flex;
     flex-wrap: wrap;
@@ -710,8 +715,70 @@ button {
 
   }
 
+  .main-portfolio-list {
+
+    width: calc((100% - 24px) / 2);
+  }
 
 }
+
+@media screen and (min-width:1158px) {
+
+  .main-portfolio-list {
+    width: 360px;
+
+  }
+
+  .main-portfolio-picture {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+
+  }
+
+  .main-cover-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-cover-text {
+    position: absolute;
+    background-color: #4d5ae5;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    font-size: 16px;
+    top: 0%;
+    width: 360px;
+    height: 300px;
+    padding: 40px 32px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    display: block;
+  }
+
+  .main-portfolio-list:hover .main-cover-text {
+    transform: translateY(0);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .main-portfolio-list:hover {
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .container-main-portfolio-list {
+    margin-bottom: 0;
+  }
+}
+
+
+
 
 /* _____________FOOOOOOTER____________ */
 
@@ -753,6 +820,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-container {
@@ -859,10 +927,64 @@ button {
     padding-bottom: 96px;
   }
 
+  .footer-main {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .container-logo {
+    max-width: 264px;
+  }
+
+  .footer-forms {
+    display: flex;
+    gap: 24px;
+
+  }
+
+  .footer-btn-form {
+    margin-top: 0;
+  }
+
+  .footer-forms-text {
+
+    text-align: left;
+  }
+
+  .footer-form-input {
+    max-width: 264px;
+  }
+}
+
+@media screen and (min-width:1158px) {
+
+  .post-footer {
+    background-color: #2e2f42;
+    padding: 100px 0 100px;
+  }
+
+  .footer-main {
+    gap: 0px;
+    flex-wrap: nowrap;
+  }
+
+  .container-logo {
+    margin-right: 120px;
+    text-align: left;
+  }
+
+  .footer-container {
+    margin-right: 80px;
+    text-align: left;
+  }
+
+  .post-footer-text {
+    text-align: left;
+  }
 
 
 }
-
 
 
 
