@@ -693,6 +693,10 @@ h6 {
 
 
 .modal {
+
+  width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -705,6 +709,9 @@ h6 {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
+
+
+
 }
 
 .backdrop.is-open {
@@ -775,7 +782,6 @@ h6 {
   text-align: center;
   color: #2e2f42;
   max-width: 360px;
-
   margin-bottom: 16px;
 }
 

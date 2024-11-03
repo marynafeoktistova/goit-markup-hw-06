@@ -1002,7 +1002,7 @@ button {
   border-radius: 4px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 8px 16px 9px 16px;
+  padding: 8px 16px 24px 16px;
 }
 
 .backdrop.is-open {
@@ -1063,6 +1063,7 @@ button {
   max-width: 256px;
   margin-top: 72px;
   margin-bottom: 16px;
+
 }
 
 .modal-input {
@@ -1149,6 +1150,105 @@ button {
   border-color: #4D5AE5
 }
 
+.modal-field-check {
+  margin-bottom: 24px;
+}
+
+.modal-check-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  white-space: nowrap;
+
+}
+
+.modal-check-span {
+  display: inline-flex;
+  border-radius: 2px;
+
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-policy {
+  color: #4d5ae5;
+  display: block;
 
 
-@media screen and (min-width:768px) {}
+}
+
+.modal-check:checked+.modal-check-text .modal-check-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.modal-bnb {
+  margin-top: 24px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+@media screen and (min-width:768px) {
+
+  .modal {
+
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+
+  }
+
+  .backdrop.is-open {
+    padding: 24px;
+  }
+
+  .modal-text {
+    max-width: 360px;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+
+  .modal-input {
+    padding-left: 38px;
+  }
+
+  .modal-textarea {
+    padding: 8px 16px;
+  }
+
+  .link-policy {
+    display: inline-flex;
+  }
+
+}
