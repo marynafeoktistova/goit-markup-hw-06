@@ -227,6 +227,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
+  width: 100%;
 }
 
 .header-menu-list {
@@ -284,6 +286,7 @@ button {
   .header-contact {
     font-style: normal;
     display: block;
+
   }
 
   .header-navigation {
@@ -380,6 +383,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    white-space: no-wrap;
 
   }
 
@@ -803,6 +807,7 @@ button {
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 72px;
+  margin-top: 96px;
 }
 
 .main-cover-text {
