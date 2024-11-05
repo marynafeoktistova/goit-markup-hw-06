@@ -807,7 +807,7 @@ button {
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 72px;
-  margin-top: 96px;
+
 }
 
 .main-cover-text {
@@ -936,8 +936,8 @@ button {
 
 .post-footer {
   background-color: #2e2f42;
-  ;
-  padding: 96px 16px;
+
+
 }
 
 .post-footer-text {
@@ -1072,6 +1072,8 @@ button {
 
 @media screen and (min-width:768px) {
 
+
+
   .post-footer {
     background-color: #2e2f42;
     padding-top: 96px;
@@ -1126,7 +1128,7 @@ button {
   }
 
   .footer-container {
-    margin-right: 80px;
+
     text-align: left;
   }
 
